@@ -21,29 +21,31 @@ const SignUp = () => {
       ) : (
         <div>
           <h1>アカウントを作成</h1>
-          <form onSubmit={handleSubmit}>
-            <div>
-              <label>メールアドレス</label>
-              <input
-                name='email'
-                type='email'
-                placeholder='email'
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-            <div>
-              <label>パスワード</label>
-              <input
-                name='password'
-                type='password'
-                placeholder='password'
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </div>
-            <div>
-              <button>ログイン</button>
-            </div>
-          </form>
+          <div className='login-page'>
+            <form onSubmit={handleSubmit}>
+              <div>
+                {/* <label>メールアドレス</label> */}
+                <input
+                  name='email'
+                  type='email'
+                  placeholder='email'
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              <div>
+                {/* <label>パスワード</label> */}
+                <input
+                  name='password'
+                  type='password'
+                  placeholder='password'
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </div>
+              <div>
+                <button>ログイン</button>
+              </div>
+            </form>
+          </div>
         </div>
       )}
     </>
